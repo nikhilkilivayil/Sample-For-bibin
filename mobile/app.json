@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "RideHail",
+    "slug": "uber-clone-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "ridehail",
+    "splash": {
+      "backgroundColor": "#000000"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.ridehail",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "We use your location to find rides near you.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Drivers need to share location during trips."
+      }
+    },
+    "android": {
+      "package": "com.example.ridehail",
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+        }
+      ]
+    ],
+    "extra": {
+      "apiBaseUrl": "http://localhost:4000"
+    }
+  }
+}
